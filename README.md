@@ -67,7 +67,7 @@ Attention:
 FC:
 ├── Linear(256 → n_classes)
 
-
+```
 ## 🏋️‍♂️ Training Details
 
 - **Preprocessing:**
