@@ -78,3 +78,52 @@ FC:
 
 All metrics are logged during evaluation and used to analyze the model's behavior across different emotions.
 
+## ✅ Evaluation Results
+
+- **Overall Accuracy**: `73.32%`
+- **Weighted F1 Score**: `73.25%`
+
+### 📊 Confusion Matrix
+
+```
+[[63  0  6  0  4  0  0  2]
+ [ 0 62  2  0  5  4  2  0]
+ [ 6  1 27  2  1  0  1  1]
+ [ 4  1  0 46  2  0 16  6]
+ [ 3  1  1  9 50  3  6  2]
+ [ 0  2  1  0  0 32  3  0]
+ [ 2  6  5  6  4  3 49  0]
+ [ 0  0  1  1  2  1  3 31]]
+```
+
+### 🎯 Accuracy Per Class
+
+- **Angry**: 84.00%
+- **Calm**: 82.67%
+- **Disgust**: 69.23%
+- **Fearful**: 61.33%
+- **Happy**: 66.67%
+- **Neutral**: 84.21%
+- **Sad**: 65.33%
+- **Surprised**: 79.49%
+
+---
+
+### 📋 Classification Report
+
+```
+              precision    recall  f1-score   support
+
+       angry       0.81      0.84      0.82        75
+        calm       0.85      0.83      0.84        75
+     disgust       0.63      0.69      0.66        39
+     fearful       0.72      0.61      0.66        75
+       happy       0.74      0.67      0.70        75
+     neutral       0.74      0.84      0.79        38
+         sad       0.61      0.65      0.63        75
+   surprised       0.74      0.79      0.77        39
+
+    accuracy                           0.73       491
+   macro avg       0.73      0.74      0.73       491
+weighted avg       0.73      0.73      0.73       491
+```
