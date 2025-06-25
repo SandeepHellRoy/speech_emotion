@@ -37,10 +37,6 @@ Each filename contains the emotion ID at position 3 (e.g. `03-01-01-01-01-01-06.
 - **Sampling Rate**: All audio is resampled to 16,000 Hz.
 - **Feature Extraction**: Log-Mel spectrograms (`128` mel bands, time length padded/truncated to `T=300`).
 - **Normalization**: Audio is normalized to unit scale.
-- **Augmentation** *(training only)*:
-  - Time-stretching
-  - Pitch shifting
-  - Gaussian noise
 
 ---
 
